@@ -16,13 +16,11 @@ A. PAGE PRINCIPALE
    - accueil.html  : Le menu principal pour choisir son niveau.
    - style.css     : La feuille de style commune à toutes les pages.
 
-B. LES NIVEAUX DE JEU (Exemples de noms)
-   - niveau4.html (ou test.html)  : Le jeu avec 4 chiffres.
-   - niveau5.html (ou test1.html) : Le jeu avec 5 chiffres (Standard).
-   - niveau6.html (ou test2.html) : Le jeu avec 6 chiffres (Expert).
+B. LES NIVEAUX DE JEU 
+   -  test.html : Le jeu avec 4 chiffres.
+   -  test1.html : Le jeu avec 5 chiffres.
+   -  test2.html : Le jeu avec 6 chiffres .
 
-   *Note : Assurez-vous que chaque fichier HTML appelle le bon script JS 
-   correspondant à sa difficulté.*
 
 3. INSTALLATION ET LANCEMENT
 ----------------------------
@@ -41,11 +39,5 @@ L'objectif est de trouver le code secret généré aléatoirement.
 Après chaque proposition, deux indices vous aident :
    - "Bien placés" : Chiffre correct et à la bonne place.
    - "Mal placés"  : Chiffre correct mais à la mauvaise place.
-
-5. MODIFIER LES NIVEAUX
------------------------
-Si vous souhaitez changer les noms des fichiers (par exemple passer de "test.html" 
-à "niveau4.html"), n'oubliez pas de mettre à jour les liens <a href="..."> 
-dans le fichier "accueil.html".
 
 =============================================================================

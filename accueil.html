@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil Mastermind</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+       
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; 
+            margin-top: 30px;
+        }
+
+        .btn-menu1 {
+            text-decoration: none;
+            background-color: #12d215;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+                .btn-menu2 {
+            text-decoration: none;
+            background-color: #d2cf12;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+                .btn-menu3 {
+            text-decoration: none;
+            background-color: #f13207;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn-menu:hover {
+            background-color: #29b92b;
+            transform: scale(1.05); 
+        }
+        
+        p.description {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jeu Mastermind</h1>
+    <p class="description">Choisissez votre niveau de difficulté :</p>
+
+    <div class="menu-container">
+        <a href="test.html" class="btn-menu1">Niveau Standard (4 Chiffres)</a>
+
+        <a href="test1.html" class="btn-menu2">Niveau Expert (5 Chiffres)</a>
+
+        <a href="test2.html" class="btn-menu3">Niveau Maître (6 Chiffres)</a>
+    </div>
+
+</body>
+</html>

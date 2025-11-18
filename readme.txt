@@ -5,7 +5,7 @@ PROJET : JEU MASTERMIND (JS / HTML / CSS)
 1. DESCRIPTION
 --------------
 Ce projet est une version web du célèbre jeu de logique "Mastermind". 
-L'objectif est de deviner une combinaison secrète de 5 chiffres générée 
+L'objectif est de deviner une combinaison secrète de 4, 5, 6 chiffres générée 
 aléatoirement par l'ordinateur.
 
 2. STRUCTURE DES FICHIERS
@@ -27,7 +27,7 @@ Aucune installation de logiciel n'est nécessaire.
 
 4. RÈGLES DU JEU
 ----------------
-1. L'ordinateur génère une combinaison secrète de 5 chiffres (de 0 à 9).
+1. L'ordinateur génère une combinaison secrète de 4, 5, 6 chiffres (de 0 à 9).
 2. Vous devez entrer une proposition de 5 chiffres dans la case "Votre réponse".
 3. Cliquez sur le bouton "Vérifier".
 4. Le jeu affiche deux indices pour chaque tentative :

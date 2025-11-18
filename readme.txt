@@ -1,54 +1,51 @@
 =============================================================================
-PROJET : JEU MASTERMIND (JS / HTML / CSS)
+PROJET : MASTERMIND MULTI-NIVEAUX (JS / HTML / CSS)
 =============================================================================
 
 1. DESCRIPTION
 --------------
-Ce projet est une version web du célèbre jeu de logique "Mastermind". 
-L'objectif est de deviner une combinaison secrète de 4, 5, 6 chiffres générée 
-aléatoirement par l'ordinateur.
+Ce projet est une suite de jeux "Mastermind" proposant plusieurs niveaux de 
+difficulté. Le joueur peut choisir la longueur de la combinaison secrète 
+(4, 5 ou 6 chiffres) via une page d'accueil.
 
 2. STRUCTURE DES FICHIERS
 -------------------------
-Le projet est composé de trois fichiers principaux :
+Pour que le jeu fonctionne correctement, organisez vos fichiers comme ceci :
 
-- test.html   : La structure de la page (les zones d'affichage, l'input, le bouton).
-- style.css   : La mise en forme visuelle (couleurs, centrage, design moderne).
-- scri.js     : La logique du jeu (génération du code secret, vérification des saisies).
+A. PAGE PRINCIPALE
+   - accueil.html  : Le menu principal pour choisir son niveau.
+   - style.css     : La feuille de style commune à toutes les pages.
+
+B. LES NIVEAUX DE JEU (Exemples de noms)
+   - niveau4.html (ou test.html)  : Le jeu avec 4 chiffres.
+   - niveau5.html (ou test1.html) : Le jeu avec 5 chiffres (Standard).
+   - niveau6.html (ou test2.html) : Le jeu avec 6 chiffres (Expert).
+
+   *Note : Assurez-vous que chaque fichier HTML appelle le bon script JS 
+   correspondant à sa difficulté.*
 
 3. INSTALLATION ET LANCEMENT
 ----------------------------
-Aucune installation de logiciel n'est nécessaire.
-
-1. Assurez-vous que les trois fichiers (test.html, style.css, scri.js) sont 
-   dans le même dossier.
-2. Ouvrez le fichier "test.html" avec n'importe quel navigateur web moderne 
-   (Chrome, Firefox, Edge, Safari).
+1. Placez tous les fichiers (.html, .css, .js) dans le même dossier.
+2. Ouvrez le fichier "accueil.html" avec votre navigateur web.
+3. Cliquez sur le bouton du niveau auquel vous souhaitez jouer.
 
 4. RÈGLES DU JEU
 ----------------
-1. L'ordinateur génère une combinaison secrète de 4, 5, 6 chiffres (de 0 à 9).
-2. Vous devez entrer une proposition de 5 chiffres dans la case "Votre réponse".
-3. Cliquez sur le bouton "Vérifier".
-4. Le jeu affiche deux indices pour chaque tentative :
-   - "Bien placés" : Le chiffre est correct et à la bonne position.
-   - "Mal placés" : Le chiffre est présent dans le code secret mais à une autre position.
-5. Le jeu continue jusqu'à ce que vous trouviez les 5 chiffres bien placés. 
-   Le code secret est alors révélé en haut de la page.
+L'objectif est de trouver le code secret généré aléatoirement.
 
-5. FONCTIONNEMENT TECHNIQUE (ALGORITHME)
-----------------------------------------
-Le script (scri.js) utilise un algorithme de comparaison en deux passes pour 
-garantir l'exactitude des indices, notamment en cas de chiffres en double :
+- Niveau 4 : Code de 4 chiffres.
+- Niveau 5 : Code de 5 chiffres.
+- Niveau 6 : Code de 6 chiffres.
 
-- Passe 1 (Boucle 'Bien placés') : 
-  On parcourt la proposition et le secret en parallèle. Si les chiffres correspondent 
-  à la même position, on incrémente "Bien placés" et on marque ces positions comme 
-  "traitées" pour ne plus les utiliser.
+Après chaque proposition, deux indices vous aident :
+   - "Bien placés" : Chiffre correct et à la bonne place.
+   - "Mal placés"  : Chiffre correct mais à la mauvaise place.
 
-- Passe 2 (Boucle 'Mal placés') : 
-  On parcourt les chiffres restants de la proposition. Pour chaque chiffre, on cherche 
-  s'il existe une correspondance libre (non traitée) dans le secret. Si oui, on 
-  incrémente "Mal placés" et on marque l'emplacement du secret comme "traité".
+5. MODIFIER LES NIVEAUX
+-----------------------
+Si vous souhaitez changer les noms des fichiers (par exemple passer de "test.html" 
+à "niveau4.html"), n'oubliez pas de mettre à jour les liens <a href="..."> 
+dans le fichier "accueil.html".
 
 =============================================================================
